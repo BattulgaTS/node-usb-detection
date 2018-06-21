@@ -5,12 +5,12 @@
   "main": "index.js",
   "gypfile": true,
   "scripts": {
-    "install": "prebuild-install || node-gyp rebuild",
+    "install": "prebuild-install || nw-gyp rebuild",
     "prepublishOnly": "npm run validate",
     "validate": "eslint **/*.js && npm test",
     "test": "jasmine ./test/test.js",
     "prebuild": "prebuild --all --strip --verbose",
-    "rebuild": "node-gyp rebuild"
+    "rebuild": "nw-gyp rebuild"
   },
   "repository": {
     "type": "git",
