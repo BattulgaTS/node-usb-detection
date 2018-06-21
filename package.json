@@ -6,7 +6,7 @@
   "gypfile": true,
   "scripts": {
     "preinstall": "nw-gyp configure --target=0.28.2",
-    "install": "prebuild-install || nw-gyp rebuild",
+    "install": "prebuild-install || nw-gyp rebuild --target=0.28.2",
     "prepublishOnly": "npm run validate",
     "validate": "eslint **/*.js && npm test",
     "test": "jasmine ./test/test.js",
