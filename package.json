@@ -5,7 +5,6 @@
   "main": "index.js",
   "gypfile": true,
   "scripts": {
-    "install": "nw-gyp rebuild --target=0.28.2 --arch=x64",
     "prepublishOnly": "npm run validate",
     "validate": "eslint **/*.js && npm test",
     "test": "jasmine ./test/test.js",
